@@ -1,0 +1,41 @@
+.cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 1440px;
+}
+
+.main {
+    &__container {
+        margin: 48px 128px 80px 128px;
+    }
+}
+
+.select {
+    &__title {
+        padding-top: 78px;
+        font-weight: bold;
+        font-size: 36px;
+    }
+}
+
+
+.dev {
+    &--bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__copyright {
+        color: #fefefe;
+        font-size: 14px;
+        padding: 4px 0 16px 0;
+    }
+    &__name {
+        color: #fefefe;
+        font-size: 14px;
+    }
+}
+

@@ -1,0 +1,8 @@
+.main {
+    &__container {
+        margin: 48px 128px 80px 128px;
+        @include BreakPoint(sm) {
+            margin: 40px 16px 64px 16px;
+        }
+    }
+}

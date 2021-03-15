@@ -1,0 +1,40 @@
+@import "../abstracts/include";
+
+.card {
+    &__title {
+        margin-top: 78px;
+        font-weight: bold;
+        font-size: 36px;
+        @include BreakPoint(sm) {
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+    }
+    &__layout {
+        margin-top: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        @include BreakPoint(sm) {
+            display: none;
+        }
+        &__mobile {
+            display: none;
+            @include BreakPoint(sm) {
+                display: inline;
+            }
+        }
+    }
+    &__item {
+        width: 33%;
+        margin-bottom: 64px;
+        @include BreakPoint(md) {
+            width: 50%;
+            margin-bottom: 24px;
+        }
+        @include BreakPoint(sm) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

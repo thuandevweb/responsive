@@ -1,0 +1,115 @@
+@import "../abstracts/include";
+
+.navbar {
+    &__item {
+        list-style: none;
+        padding-left: 20px;
+        &--left {
+            list-style: none;
+            height: 24px;
+        }
+    }
+    &__container {
+        width: 100%;
+        height: 64px;
+        position: relative;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include BreakPoint(sm) {
+            position: absolute;
+            transition: 0.4s;
+            transform: scaleY(0);
+            transform-origin: top;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: #b2d7f5;
+            height: 100px;
+            padding-right: 2em;
+            &.active {
+                transform: scaleY(1);
+            }
+        }
+        &--left {
+            height: 24px;
+        }
+    }
+    &__wrapper {
+        padding: 0px 128px;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #1769aa;
+
+        @include BreakPoint(md) {
+            padding: 0px 32px;
+        }
+        @include BreakPoint(sm) {
+            padding: 0px 16px;
+        }
+    }
+    &__label {
+        color: #fefefe;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 24px;
+    }
+    &__search {
+        &__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2196f3;
+            width: 195px;
+            height: 35px;
+            border-radius: 3px;
+        }
+        border-radius: 3px;
+        background-color: #2196f3;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+        border: none;
+    }
+    &__icon {
+        padding: 0 5px 0 15px;
+        &--bar {
+            display: none;
+        }
+    }
+
+    &__btn--mobile {
+        overflow: hidden;
+        display: none;
+        cursor: pointer;
+        @include BreakPoint(sm) {
+            display: block;
+        }
+        & > div {
+            height: 6px;
+            width: 40px;
+            transition: 0.4s;
+            background-color: #fefefe;
+            &:nth-child(2) {
+                margin: 6px 0;
+            }
+        }
+
+        &.active > div {
+            &:first-child {
+                transform: translateY(12px) rotate(45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            &:last-child {
+                transform: translateY(-12px) rotate(-45deg);
+            }
+        }
+    }
+}

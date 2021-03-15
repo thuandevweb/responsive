@@ -1,0 +1,51 @@
+.cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1440px;
+}
+
+.main__container {
+  margin: 48px 128px 80px 128px;
+}
+
+.select__title {
+  padding-top: 78px;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.dev--bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dev__copyright {
+  color: #fefefe;
+  font-size: 14px;
+  padding: 4px 0 16px 0;
+}
+
+.dev__name {
+  color: #fefefe;
+  font-size: 14px;
+}
+/*# sourceMappingURL=myquizhome.css.map */

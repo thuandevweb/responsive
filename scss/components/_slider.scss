@@ -1,0 +1,77 @@
+@import "../abstracts/include";
+
+.discript {
+    &__img {
+        @include BreakPoint(sm) {
+            display: none;
+        }
+        &__mobile {
+            display: none;
+            @include BreakPoint(sm) {
+                display: block;
+            }
+        }
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 36px;
+        padding-bottom: 64px;
+        @include BreakPoint(sm) {
+            height: 0;
+            width: 0;
+            padding: 0;
+            margin: 0;
+            visibility: hidden;
+        }
+    }
+    &__sub-title {
+        font-weight: bold;
+        font-size: 36px;
+        padding-bottom: 24px;
+        @include BreakPoint(sm) {
+            font-size: 18px;
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 64px;
+        @include BreakPoint(sm) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__label {
+        color: rgba(0, 0, 0, 0.6);
+        font-weight: bold;
+        font-size: 16px;
+    }
+    &__content {
+        padding-left: 120px;
+        @include BreakPoint(sm){
+            padding: 32px 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &--mid {
+            padding-right: 120px;
+        @include BreakPoint(sm){
+            padding: 32px 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        }
+    }
+}

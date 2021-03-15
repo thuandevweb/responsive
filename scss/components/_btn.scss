@@ -1,0 +1,30 @@
+@import "../abstracts/variable";
+@import "../abstracts/include";
+
+.btn {
+    color: $primary-font-color;
+    border-radius: 3px;
+    transition: 0.3s;
+    &__size {
+        &--lg {
+            padding: 16px 32px;
+            font-size: 18px;
+            @include BreakPoint(sm) {
+                padding: 8px 24px;
+            }
+        }
+        &--base {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+    }
+
+    &__bg {
+        &--red {
+            background-color: $secondary-color-main;
+            &:hover {
+                background-color: #ff2975;
+            }
+        }
+    }
+}
